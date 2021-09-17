@@ -1,0 +1,15 @@
+.bula{
+    padding: 0 25px 100px;
+    background-color: #dfdfdf;
+    
+    &__container{
+        border: 1px solid #cfcfcf;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    &__text{
+        margin: 30px 12px;
+        color: #7e7e7e; 
+    }
+}
