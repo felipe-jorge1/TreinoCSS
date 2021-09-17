@@ -1,0 +1,34 @@
+.menu{
+
+    &__container{
+        margin: 0;
+        padding: 20px;
+        display: none;
+        list-style: none;
+    }
+
+    &__icon{
+        display: flex;
+
+        &-button{
+            font-size: 2rem;
+            color: #0C722A;
+            margin: 20px 0px 20px 20px;
+            cursor: pointer;
+        }
+    }
+
+    &__logo{
+        margin: auto;
+    }
+
+    &__item{
+        display: none;
+        padding: 0 15px;
+    }
+}
+
+.novalgina-image{
+    width: 180px;
+    height: auto;
+}
