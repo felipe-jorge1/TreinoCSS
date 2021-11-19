@@ -1,8 +1,27 @@
 .card{
+    background: #dfdfdf;
+    background: linear-gradient(
+        0deg, rgba(223,223,223) 0%, rgba(223,223,223) 0%, rgba(255,255,255,1) 60%);;
 
-    &__section-title{
+    &__sectionTitle{
         color: #471515;
-        margin: 0 0 45px 15px;
+        margin: 0 0 45px 30px;
+        
+        &-span{
+            display: flex;
+            
+            @media (min-width: 1024px) {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__box{
+        @media (min-width: 1024px) {
+            display: flex;
+            margin: 50px 100px 0px;
+            padding-bottom: 50px;
+        }
     }
 
     &__container{
@@ -10,24 +29,97 @@
         flex-flow:column;
         padding: 15px 30px 0;
         border: 1px solid #7070705c;
-        margin: 15px;
+        margin: 20px 15px 0;
         border-radius: 25px;
+        position: relative;
+        height: 100%;
+        background: white;
 
-        &::before{
+        @media (min-width: 1024px) {
+            width: 500px;
+            height: 600px;
+            justify-content: space-between;
+        }
+
+        &:before{
             content: "Bebês";
             color: white;
-            font-size: 15px;
+            font-size: 10px;
             text-align: center;
-            vertical-align: middle;
             background: #155AA0;
             width: 50px;
             height: 50px;
             border-radius: 50px;
+            position: absolute;
+            top: -15px;
+            right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:nth-child(2){
+
+            &:before{
+                content: "Bebês e Crianças";
+                color: white;
+                font-size: 10px;
+                text-align: center;
+                background: #f18cc4;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                position: absolute;
+                top: -15px;
+                right: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &:nth-child(3){
+
+            &:before{
+                content: "Bebês e Crianças";
+                color: white;
+                font-size: 10px;
+                text-align: center;
+                background: #f18cc4;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                position: absolute;
+                top: -15px;
+                right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            ::after{
+                content: "Adulto";
+                color: white;
+                font-size: 10px;
+                text-align: center;
+                text-transform: none;
+                background: #155AA0;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                position: absolute;
+                top: -15px;
+                right: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 
     &__image{
         border-bottom: 1px solid #7070705c;
+        width: 100%;
     }
 
     &__title{
@@ -38,6 +130,7 @@
             font-size: 20px;
             color: #154734;
             text-transform: uppercase;
+            text-align: center;
         }
     }
 
@@ -64,6 +157,7 @@
         text-align: center;
         font-size: 10px;
         text-transform: uppercase;
+        text-decoration: none;
         font-weight: bold;
         color: white;
         background-color: #609A1B;

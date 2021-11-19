@@ -1,18 +1,21 @@
 .accordion{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    min-height: 70vh;
-    background: white;
+
+    &__hero{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        min-height: 70vh;
+        background: white;
+    }
 
     &__container{
-        width: 800px;
+        width: 90%;
         padding: 15px 0 10px;   
     }
 
     &__title{
         color: #471515;
-        margin: 0 0 45px 15px;
+        margin: 50px 0 45px 30px;
     }
 
     &__box{
@@ -64,12 +67,17 @@
         text-align: center;
         font-size: 10px;
         text-transform: uppercase;
+        text-decoration: none;
         font-weight: bold;
         color: white;
         background-color: #609A1B;
         padding: 15px 80px;
         border-radius: 25px;
         cursor: pointer;
-        margin: 0 20px 60px;
+        margin: 0 40px 60px;
+
+        @media (min-width: 1024px) {
+            margin: 0 550px 60px;
+        }
     }
 }

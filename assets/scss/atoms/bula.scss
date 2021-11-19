@@ -1,15 +1,30 @@
 .bula{
-    padding: 0 25px 100px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 25px 100px;
     background-color: #dfdfdf;
     
     &__container{
         border: 1px solid #cfcfcf;
-        border-radius: 25px;
+        border-radius: 15px;
         background-color: white;
+
+        @media (min-width: 1024px) {
+            width: 80%;
+        }
     }
 
     &__text{
-        margin: 30px 12px;
-        color: #7e7e7e; 
+        margin: 16px 30px;
+        color: #7e7e7e;
+        font-size: 12px;
+
+        &:first-child{
+            padding-top: 12px;
+        }
+
+        &:last-child{
+            padding-bottom: 12px;
+        }
     }
 }

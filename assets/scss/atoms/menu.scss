@@ -1,5 +1,11 @@
 .menu{
 
+    @media (min-width:1024px) {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: flex-end;
+    }
     &__container{
         margin: 0;
         padding: 20px;
@@ -12,9 +18,13 @@
 
         &-button{
             font-size: 2rem;
-            color: #0C722A;
+            color: #609A1B;
             margin: 20px 0px 20px 20px;
             cursor: pointer;
+
+            @media (min-width:1024px) {
+                display: none;
+            }
         }
     }
 
@@ -25,10 +35,21 @@
     &__item{
         display: none;
         padding: 0 15px;
+
+        @media (min-width:1024px) {
+            display: inline-block;
+        }
+
+        &Link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #0C722A;
+        }
     }
 }
 
 .novalgina-image{
-    width: 180px;
-    height: auto;
+    width: 150px;
+    display: flex;
+    justify-content: center;
 }
