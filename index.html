@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <title>Novalgina</title>
@@ -22,29 +23,95 @@
                         alt="logo"></a></div>
         </div>
         <ul class="menu_container">
-            <li class="menu__item"><a href="#">Institucional</a></li>
-            <li class="menu__item"><a href="#">Produtos</a></li>
-            <li class="menu__item"><a href="#">Para que serve</a></li>
-            <li class="menu__item"><a href="#">Dor</a></li>
-            <li class="menu__item"><a href="#">Febre</a></li>
-            <li class="menu__item"><a href="#">Dúvidas</a></li>
+            <li class="menu__item"><a class="menu__itemLink" href="#">Institucional</a></li>
+            <li class="menu__item"><a class="menu__itemLink" href="#">Produtos</a></li>
+            <li class="menu__item"><a class="menu__itemLink" href="#">Para que serve</a></li>
+            <li class="menu__item"><a class="menu__itemLink" href="#">Dor</a></li>
+            <li class="menu__item"><a class="menu__itemLink" href="#">Febre</a></li>
+            <li class="menu__item"><a class="menu__itemLink" href="#">Dúvidas</a></li>
         </ul>
     </nav>
     <header class="header">
+        <div class="header__container">
+            <div class="header__image"><img class="header__imageTitle" src="assets/images/Group 2760.png"></div>
+            <h3 class="header__title">Para febre e até dores intensas¹²³</h3>
+            <div class="header__banner">
+                <div class="header__bannerContent">
+                    <div class="header__bannerInfantil">
+                        <button class="header__bannerButton" href="#">Infantil</button>
+                    </div>
+                </div>
+
+                <div class="header__bannerProducts">
+                    <img class="header__bannerProducts-image" src="assets/images/pack.png">
+                    <a class="header__bannerProductsBuy" href="#"><img class="header__bannerProductsBuy-icon" src="assets/images/shopping-cart.png">Comprar</a>
+                    <a class="header__bannerProducts-about" href="#">Para que serve</a>
+                </div>
+
+                <div class="header__bannerContent">
+                    <div class="header__bannerAdulto">
+                        <button class="header__bannerButton" href="#">Adulto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="header__subtitle">A marca mais recomendada pelos médicos⁶</h4>
     </header>
 
     <section class="about">
-        <h2 class="about__title">Sobre Novalgina</h2>
-        <div class="about__image"><img src="" alt="remédios novalgina"></div>
-        <p class="about__content">Novalgina é um medicamento analgésico e antitérmico, à base de dipirona, que pode ser utilizado no tratamento
-            de dores e febre¹. Com quase 100 anos de tradição no cuidado das famílias brasileiras, Novalgina tem dupla
-            ação, é clinicamente comprovado para dores intensas e febre¹²³, além de ser a marca mais prescrita
-            pelos pediatras6. Venha conhecer melhor a história da marca!</p>
-        <a class="about__content"></a>
+        <div class="about__container">
+            <h2 class="about__title">Sobre Novalgina</h2>
+            <div class="about__imageContainer"><img class="about__image" src="assets/images/Capture.PNG" alt="remédios novalgina"></div>
+            <div class="about__contentContainer">
+                <p class="about__content">Novalgina é um medicamento analgésico e antitérmico, à base de dipirona, que pode ser
+                    utilizado no tratamento
+                    de dores e febre¹. Com quase 100 anos de tradição no cuidado das famílias brasileiras, Novalgina tem dupla
+                    ação, é clinicamente comprovado para dores intensas e febre¹²³, além de ser a marca mais prescrita
+                    pelos pediatras6. Venha conhecer melhor a história da marca!</p>
+                <a class="about__button" href="#">Conheça a nossa história</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <div class="accordion">
+    <section class="carousel">
+        <h2 class="carousel__title">Dor e febre</h2>
+        <div class="carousel__container">
+            <div class="carousel__slider">
+                <div class="carousel__box">
+                    <img class="carousel__boxImage" src="assets/images/quanto-tempo-dura-um-resfriado.jpg">
+                    <span class="carousel__boxTag">Dor</span>
+                    <h3 class="carousel__boxTitle">5 medidas importantes para prevenir dores no pescoço</h3>
+                    <p class="carousel__boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursusaccumsan lectus, ac</p>
+                    <a class="carousel__boxLink" href="#">Leia mais</a>
+                </div>
+
+                <div class="carousel__box">
+                    <img class="carousel__boxImage" src="assets/images/quanto-tempo-dura-um-resfriado.jpg">
+                    <span class="carousel__boxTag">Febre</span>
+                    <h3 class="carousel__boxTitle">5 medidas importantes para prevenir dores no pescoço</h3>
+                    <p class="carousel__boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursusaccumsan lectus, ac</p>
+                    <a class="carousel__boxLink" href="#">Leia mais</a>
+                </div>
+
+                <div class="carousel__box">
+                    <img class="carousel__boxImage" src="assets/images/quanto-tempo-dura-um-resfriado.jpg">
+                    <span class="carousel__boxTag">Dor</span>
+                    <h3 class="carousel__boxTitle">5 medidas importantes para prevenir dores no pescoço</h3>
+                    <p class="carousel__boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursusaccumsan lectus, ac</p>
+                    <a class="carousel__boxLink" href="#">Leia mais</a>
+                </div>
+            </div>
+            <div class="control">
+                <span class="arrow left"><img class="arrow-image"
+                        src="assets/images/Group 2840.svg"></span>
+                <span class="arrow right"><img class="arrow-image"
+                        src="assets/images/Group 2839.svg"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="accordion">
+        <div class="accordion__hero">
             <div class="accordion__container">
                 <h2 class="accordion__title">Perguntas <br>frequentes</h2>
                 <div class="accordion__box">
@@ -105,41 +172,43 @@
                 </div>
             </div>
         </div>
-        <a class="accordion__button">Saiba mais</a>
+        <a class="accordion__button" href="#">Saiba mais</a>
     </section>
 
     <section class="card">
-        <h2 class="card__section-title">Família de <br>produtos <br>Novalgina</h2>
-        <article class="card__container">
-            <img class="card__image" src="/assets/images/novalgina-comprimidos2.png" alt="novalgina adultos">
-            <h3 class="card__title">2x mais analgésico*: clinicamente comprovado para dores intensas e febre <small
-                    class="card__text-small">1, 2 e 3</small></h3>
-            <h4 class="card__subtitle">comprovada contra a dor que te derruba</h4>
-            <p class="card__paragraph">Coprimido dipirona 1G <span class="card_paragraph-uppercase">Uso adulto e
-                    pediátrico acima de 15 anos.</span></p>
-            <a class="card__button">Saiba mais</a>
-        </article>
-        <article class="card__container">
-            <img class="card__image" src="/assets/images/novalgina-seringa.png" alt="novalgina bebês e crianças">
-            <h2 class="card__title-green">Novalgina solução oral</h2>
-            <h4 class="card__subtitle">4 benefícios em 1: efecácia comprovada, fácil de dosar, sabor framboesa, maior
-                precisão na posologia¹ </h4>
-            <p class="card__paragraph">Solução oral (infantil) 50 mg/mL <span class="card_paragraph-uppercase">Uso
-                    adulto
-                    e pediátrico acima de 3 meses.</span></p>
-            <a class="card__button">Saiba mais</a>
-        </article>
-        <article class="card__container">
-            <img class="card__image" src="/assets/images/novalgina-gotas.png" alt="novalgina adulto e crianças">
-            <h3 class="card__title">Clinicamente comprovado para dores intensas e febre <small
-                    class="card_text-small">1,
-                    2 e 3</small></h3>
-            <h4 class="card__subtitle">Gotejador seguro: segurança da dose certa ao controle da sua mão <small
-                    class="card__text-small">1</small></h4>
-            <p class="card__paragraph">Solução oral (Gotas) 500 mg/mL, <span class="card_paragraph-uppercase">Uso adulto
-                    e pediátrico aco,a de 3 meses.</span> Disponível nas versões 10ml e 20ml</p>
-            <a class="card__button">Saiba mais</a>
-        </article>
+        <div class="card__sectionTitle"><h2>Família de <span class="card__sectionTitle-span">produtos</span> <span>Novalgina</span></h2></div>
+        <div class="card__box">
+            <div class="card__container">
+                <img class="card__image" src="/assets/images/novalgina-comprimidos2.png" alt="novalgina adultos">
+                <h3 class="card__title">2x mais analgésico*: clinicamente comprovado para dores intensas e febre <small
+                        class="card__text-small">1, 2 e 3</small></h3>
+                <h4 class="card__subtitle">comprovada contra a dor que te derruba</h4>
+                <p class="card__paragraph">Coprimido dipirona 1G <span class="card_paragraph-uppercase">Uso adulto e
+                        pediátrico acima de 15 anos.</span></p>
+                <a class="card__button" href="#">Saiba mais</a>
+            </div>
+            <div class="card__container">
+                <img class="card__image" src="/assets/images/novalgina-seringa.png" alt="novalgina bebês e crianças">
+                <h2 class="card__title-green">Novalgina solução oral</h2>
+                <h4 class="card__subtitle">4 benefícios em 1: efecácia comprovada, fácil de dosar, sabor framboesa, maior
+                    precisão na posologia¹ </h4>
+                <p class="card__paragraph">Solução oral (infantil) 50 mg/mL <span class="card_paragraph-uppercase">Uso
+                        adulto
+                        e pediátrico acima de 3 meses.</span></p>
+                <a class="card__button">Saiba mais</a>
+            </div>
+            <div class="card__container">
+                <img class="card__image" src="/assets/images/novalgina-gotas.png" alt="novalgina adulto e crianças">
+                <h3 class="card__title">Clinicamente comprovado para dores intensas e febre <small
+                        class="card_text-small">1,
+                        2 e 3</small></h3>
+                <h4 class="card__subtitle">Gotejador seguro: segurança da dose certa ao controle da sua mão <small
+                        class="card__text-small">1</small></h4>
+                <p class="card__paragraph">Solução oral (Gotas) 500 mg/mL, <span class="card_paragraph-uppercase">Uso adulto
+                        e pediátrico aco,a de 3 meses.</span> Disponível nas versões 10ml e 20ml</p>
+                <a class="card__button" href="#">Saiba mais</a>
+            </div>
+        </div>
     </section>
 
     <section class="bula">
@@ -162,23 +231,20 @@
             <p class="bula__text">6 – IQVIA WRS – NPS FY 2020.</p>
         </article>
     </section>
-    <footer>
-        <ul class="footer">
-            <li class="footer__item"><a class="footer__item-link">Fale conosco</a></li>
-            <li class="footer__item"><a class="footer__item-link">Termos e condições</a></li>
-            <li class="footer__item"><a class="footer__item-link">Privacidade</a></li>
-            <li class="footer__item"><a class="footer__item-link">Mapa do site</a></li>
-            <li class="footer__text">
-                <p>NOVALGINA® (dipirona monoidratada). Indicação: analgésico e antitérmico. M.S.: 1.8326.0351. O USO DO
-                    MEDICAMENTO PODE TRAZER ALGUNS RISCOS. Leia atentamente a bula. <b>SE PERSISTIREM OS SINTOMAS, O
-                        MÉDICO
-                        DEVERÁ SER CONSULTADO.</b> Abril/2021. MAT-BR-2101965. Av. das Nações Unidas, 14401 – Torre
-                    Sucupira,
-                    Chácara Santo Antônio, São Paulo – SP. CEP 04794-000. SAC: 0800-703 0014 (de 2ª A 6ª feira das 9h às
-                    17h).</p>
-            </li>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__item-link" href="#">Fale conosco</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Termos e condições</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Privacidade</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Mapa do site</a></li>
         </ul>
+            <p class="footer__text">NOVALGINA® (dipirona monoidratada). Indicação: analgésico e antitérmico. M.S.: 1.8326.0351. O USO DO
+            MEDICAMENTO PODE TRAZER ALGUNS RISCOS. Leia atentamente a bula. <b>SE PERSISTIREM OS SINTOMAS, O
+            MÉDICO
+            DEVERÁ SER CONSULTADO.</b> Abril/2021. MAT-BR-2101965. Av. das Nações Unidas, 14401 – Torre
+            Sucupira,
+            Chácara Santo Antônio, São Paulo – SP. CEP 04794-000. SAC: 0800-703 0014 (de 2ª A 6ª feira das 9h às
+            17h).</p>  
     </footer>
 </body>
-
 </html>
